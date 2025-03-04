@@ -10,7 +10,7 @@
             font-family: 'Arial', sans-serif;
         }
 
-        #cookie {
+        #crystal {
             width: 200px;
             height: 200px;
             margin-top: 50px;
@@ -46,12 +46,12 @@
     <p id="clickValue">Click Value: 1</p>
     
     <button class="upgrade" onclick="buyUpgrade(10, 2)">Upgrade 1 (Cost: 10 Crystals)</button>
-    <button class="upgrade" onclick="buyUpgrade(20, 4)">Upgrade 2 (Cost: 20 cookies)</button>
+    <button class="upgrade" onclick="buyUpgrade(20, 4)">Upgrade 2 (Cost: 20 Crystal)</button>
 
     <h2>Auto-Clicker</h2>
     <p id="autoClickerStatus">Auto-Clicker: Off</p>
-    <button class="upgrade" onclick="buyAutoClicker(50, 1)">Buy Auto-Clicker (Cost: 50 cookies)</button>
-    <button class="upgrade" onclick="buyUpgradeAutoClicker(30, 1)">Upgrade Auto-Clicker (Cost: 30 cookies)</button>
+    <button class="upgrade" onclick="buyAutoClicker(50, 1)">Buy Auto-Clicker (Cost: 50 Crystal)</button>
+    <button class="upgrade" onclick="buyUpgradeAutoClicker(30, 1)">Upgrade Auto-Clicker (Cost: 30 Crystal)</button>
 
     <h2>Achievements</h2>
     <p class="achievement" id="achievement1">Achievement 1: Not yet achieved</p>
@@ -59,7 +59,7 @@
     <!-- Add more achievements as needed -->
 
     <script>
-        // JavaScript code for the cookie clicker game with upgrades, auto-clicker, and achievements
+        // JavaScript code for the crystal clicker game with upgrades, auto-clicker, and achievements
         var score = 0;
         var clickValue = 1;
         var autoClickerEnabled = false;
@@ -69,7 +69,7 @@
         var upgradesAchievementThreshold = 5;
         var autoClickerAchievementThreshold = 1;
 
-        function clickCookie() {
+        function clickCrystal() {
             score += clickValue;
             updateScore();
 
